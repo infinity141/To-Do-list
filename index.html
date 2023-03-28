@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style type="text/css">
-    </style>
-    <link rel="stylesheet" href="style.css" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css"></style>
+    <link rel="stylesheet" href="style.css" />
     <title>To Do List</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="aligner">
-        <div class="name">
-            <h1>To Do List</h1>
-        </div>
-        <form id="formm">
+      <div class="name">
+        <h1>To Do List</h1>
+      </div>
+      <form id="form-container">
         <div class="row column_1">
-            <input type="text" id="todo" class="mama">
-            <button id="finished" >✔️</button>
+          <input
+            type="text"
+            id="todo"
+            class="mama"
+            placeholder="What do you want to do?"
+          />
+          <button id="add-button">✔️</button>
         </div>
-        <div class="listed" id="listed">
-           <p><b>All</b></p>
-           <hr>
+        <div class="listed" id="all-list">
+          <p class="all-head"><b>All</b></p>
+          <hr />
         </div>
         <div class="listed_helper">
-            <p><b>Done</b></p>
-            <hr>
+          <p class="all-head"><b>To do</b></p>
+          <hr />
         </div>
-        <div class="listed son"id="listed_2">
-         </div>
-         <div class="listed_helper">
-            <p><b>To do</b></p>
-            <hr>
+        <div class="listed son" id="todo-list"></div>
+        <div class="listed_helper">
+          <p class="all-head"><b>Done</b></p>
+          <hr />
         </div>
-         <div class="listed son" id="listed_3">
-        </div>
-        </form>
+        <div class="listed son" id="done-list"></div>
+      </form>
     </div>
-</body>
-<script src="nah.js"></script>
+  </body>
+  <script src="nah.js"></script>
 </html>

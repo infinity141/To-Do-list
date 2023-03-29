@@ -36,8 +36,11 @@ function addElement(textPara, checkedPara, listInfoAllIdStorage) {
   const listDiv = document.createElement("div");
   listDiv.classList.add("list-div");
   const listInfoAll = document.createElement("input");
+  listInfoAll.classList.add("check-info");
   const listInfoDone = document.createElement("p");
+  listInfoDone.classList.add("done-info");
   const listInfoTodo = document.createElement("p");
+  listInfoTodo.classList.add("todo-info");
   listInfoDone.innerHTML = textPara;
   listInfoTodo.innerHTML = textPara;
 
@@ -70,10 +73,15 @@ function addElement(textPara, checkedPara, listInfoAllIdStorage) {
   listInfoAll.id = listInfoAllIdStorage;
   idCount++;
   const listInfoAllLabel = document.createElement("label");
-  listInfoAllLabel.setAttribute("for", "listInfoAllIdStorage");
+  listInfoAllLabel.setAttribute("for", listInfoAllIdStorage);
   listInfoAllLabel.classList.add("list-info");
   listInfoAllLabel.textContent = textPara;
   console.log(listInfoAllIdStorage);
+
+  // Give a common class name to all the elements
+  listInfoAllLabel.classList.add("every-text");
+  listInfoDone.classList.add("every-text");
+  listInfoTodo.classList.add("every-text");
 
   // appends all the children to where we want them to be displayed
   listInfoAll.innerHTML = textPara;

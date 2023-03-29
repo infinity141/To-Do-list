@@ -99,8 +99,8 @@ body::-webkit-scrollbar {
 
 .list-div {
   display: flex;
-  align-items: stretch;
-  margin-bottom: 2px;
+  align-items: flex-start;
+  margin-bottom: 3px;
 }
 
 .every-text {

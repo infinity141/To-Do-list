@@ -41,8 +41,8 @@ function addElement(textPara, checkedPara, listInfoAllIdStorage) {
   listInfoDone.classList.add("done-info");
   const listInfoTodo = document.createElement("p");
   listInfoTodo.classList.add("todo-info");
-  listInfoDone.innerHTML = textPara;
-  listInfoTodo.innerHTML = textPara;
+  listInfoDone.innerHTML = "💪 " + textPara;
+  listInfoTodo.innerHTML = "😅 " + textPara;
 
   // Checks if the checkbox is checked or not
   listInfoAll.addEventListener("change", (event) => {

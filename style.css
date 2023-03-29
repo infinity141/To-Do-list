@@ -15,11 +15,17 @@ body::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
 }
 
+.aligner {
+  height: 100vh;
+  max-width: 800px;
+  margin: auto;
+}
+
 .smoother {
   padding: 0px 20px 20px 20px;
   border-radius: 20px 20px 0px 0px;
   background: linear-gradient(45deg, rgba(255,176,136,1) 0%, rgba(255,144,135,1) 30%, rgba(255,70,132,1) 100%);
-  min-height: 100vh;
+  min-height: 75%;
 }
 
 .dragger {
@@ -71,6 +77,7 @@ body::-webkit-scrollbar {
   outline: none;
   border: none;
   width: 90%;
+  padding-left: 3px;
 }
 
 .submit-btn {
@@ -109,4 +116,50 @@ body::-webkit-scrollbar {
 
 .list-info {
   margin-left: 2px;
+}
+
+@media (min-width: 1024px) {
+  .aligner {
+    margin-left: 112px;
+  }
+
+  .horizontal {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .todo-list {
+    width: 49%;
+  }
+
+  .done-list {
+    width: 49%;
+    margin-top: 10px;
+  }
+
+  .every-text, .task-adder {
+    font-size: large;
+  }
+
+  .list-name {
+    font-size: larger;
+  }
+
+  .list-div {
+    align-items: center;
+  }
+}
+
+@media (min-width: 1124px){
+  .aligner {
+    max-width: 912px;
+  }
+}
+
+@media (min-width: 1224px){
+  .aligner {
+    max-width: 1012px;
+  }
 }

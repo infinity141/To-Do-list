@@ -76,7 +76,6 @@ function addElement(textPara, checkedPara, listInfoAllIdStorage) {
   listInfoAllLabel.setAttribute("for", listInfoAllIdStorage);
   listInfoAllLabel.classList.add("list-info");
   listInfoAllLabel.textContent = textPara;
-  console.log(listInfoAllIdStorage);
 
   // Give a common class name to all the elements
   listInfoAllLabel.classList.add("every-text");

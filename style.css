@@ -78,6 +78,7 @@ body::-webkit-scrollbar {
   border: none;
   width: 90%;
   padding-left: 3px;
+  font-size: medium;
 }
 
 .submit-btn {
@@ -111,7 +112,7 @@ body::-webkit-scrollbar {
 }
 
 .every-text {
-  font-size: small;
+  font-size: medium;
 }
 
 .list-info {
